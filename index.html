@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header contenido">
+        <h1>
+            <img src="assets/img/logo.svg" alt="logo encriptador">
+        </h1>
+    </header>
+
+    <main>
+        <section class="encriptador contenido">
+            <textarea name="" id="txtPalabra" class="encriptador__txtPalabra" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+            <p class="encriptador__condicion">
+                <img src="assets/img/info.svg" alt="info" class="encriptador__imginfo">
+                Solo letras minúsculas y sin acentos
+            </p>
+
+            <button class="encriptador__btn" id="btnEncriptar">Encriptar</button>
+
+            <button class="encriptador__btn encriptador__btn--desencriptar" id="btnDesencriptar">Desencriptar</button>
+        </section>
+
+        <section class="resultado contenido">
+            <div class="resultado__card">
+                <h2 class="resultado__title">Ningún mensaje fue encontrado</h2>
+
+                <p class="resultado__paragraph">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button class="resultado__btnCopiar ocultar" id="btnCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

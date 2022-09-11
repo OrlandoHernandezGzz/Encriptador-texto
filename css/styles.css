@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-fondo: #E9ECF8;
+    --font-family: 'Inter', sans-serif;
+    --color-texto: #0A3871;
+}
+
+body {
+    background: var(--color-fondo);
+}
+
+.contenido {
+    margin: 20px 20px;
+}
+
+.encriptador__txtPalabra {
+    width: 100%;
+    padding: 10px;
+    font-size: 32px;
+    font-family: var(--font-family);
+    color: var(--color-texto);
+    background: var(--color-fondo);
+    border: none;
+}
+
+.encriptador__txtPalabra::placeholder {
+    color: var(--color-texto);
+}
+
+.encriptador__btn {
+    margin: 20px 0 0 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 24px;
+    border: none;
+    background: var(--color-texto);
+    color: #fff;
+    cursor: pointer;
+}
+
+.encriptador__btn--desencriptar {
+    background: var(--color-fondo);
+    border: 1px solid var(--color-texto);
+    color: #0A3871;
+}
+
+.resultado__card {
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 32px;
+    padding: 32px;
+    text-align: center;
+}
+
+.resultado__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.resultado__paragraph {
+    font-size: 16px;
+}
+
+.resultado__btnCopiar {
+    margin: 20px 0 0 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 24px;
+    background: inherit;
+    border: 1px solid var(--color-texto);
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.resultado__completo {
+    font-size: 32px;
+    font-family: var(--font-family);
+    text-align: start;
+    background-image: none;
+}
+
+.ocultar {
+    display: none;
+}
